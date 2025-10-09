@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE infoList
+  SYSTEM "crt_infolist.dtd">
+<infoList vendor="NXP">
+   <info name="MIMXRT1176xxxxx" chip="MIMXRT1176xxxxx">
+      <chip>
+         <name>MIMXRT1176xxxxx</name>
+         <family>MIMXRT1170</family>
+         <vendor>NXP</vendor>
+         <memory id="Flash"
+                 type="Flash"
+                 size="0"
+                 is_ro="true"
+                 can_program="true"/>
+         <memory id="RAM" type="RAM" size="2048"/>
+         <memoryInstance id="SRAM_OC1"
+                         derived_from="RAM"
+                         location="0x20240000"
+                         size="0x00080000"/>
+         <memoryInstance id="SRAM_OC2"
+                         derived_from="RAM"
+                         location="0x202c0000"
+                         size="0x00080000"/>
+         <memoryInstance id="SRAM_OC_ECC1"
+                         derived_from="RAM"
+                         location="0x20340000"
+                         size="0x00010000"/>
+         <memoryInstance id="SRAM_OC_ECC2"
+                         derived_from="RAM"
+                         location="0x20350000"
+                         size="0x00010000"/>
+         <memoryInstance id="SRAM_OC_cm7"
+                         derived_from="RAM"
+                         location="0x20360000"
+                         size="0x00020000"/>
+      </chip>
+      <processor>
+         <name gcc_name="cortex-m4">Cortex-M4</name>
+         <family>Cortex-M</family>
+      </processor>
+      <processor>
+         <name gcc_name="cortex-m7">Cortex-M7</name>
+         <family>Cortex-M</family>
+      </processor>
+   </info>
+</infoList>
